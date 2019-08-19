@@ -10,13 +10,19 @@ En este laboratorio se pretende diseñar y desarrollar una aplicación web. La f
 
 Los objetivos requeridos en el laboratorio son los siguientes:
 
-    Diseño de la solución haciendo uso del patrón MVC (en caso de dificultad en su uso, se puede utilizar otro diseño y también se valorará, aunque para alcanzar la máxima puntuación será requerido el uso de MVC).
-    Inclusión de formularios y tratamiento de datos en el lado del servidor.
-    Conexión, consulta, inserción, actualización y borrado de datos. Se valorará positivamente que se usen otros atributos de my_sqli.
-    Uso de clases, valorando positivamente la herencia.
+Diseño de la solución haciendo uso del patrón MVC (en caso de dificultad en su uso, se puede utilizar otro diseño y también se valorará, aunque para alcanzar la máxima puntuación será requerido el uso de MVC).
+Inclusión de formularios y tratamiento de datos en el lado del servidor.
+Conexión, consulta, inserción, actualización y borrado de datos. Se valorará positivamente que se usen otros atributos de my_sqli.
+Uso de clases, valorando positivamente la herencia.
 
 Entrega del laboratorio
 
- 
 
 Se deberá entregar el código implementado, incluyendo todos los ficheros necesarios para poder probar la funcionalidad requerida. Además, se deberá entregar una memoria técnica de la actividad, detallando los aspectos relacionados con el diseño de la solución haciendo uso del patrón MVC (en caso de aplicarlo), los formularios, el acceso a la base de datos, y el uso de clases. Igualmente, se solicita la entrega de capturas de imágenes que muestren resultados del desarrollo. Recuerda que es importante mantener un buen estilo de programación e incluir comentarios en los desarrollos.
+
+
+Integrantes del equipo:
+
+José Daniel Sustaita Garza
+
+Juan Carlos Valencia Lizardi
