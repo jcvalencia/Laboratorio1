@@ -13,7 +13,7 @@ define('REQUEST_METHOD', $_SERVER['REQUEST_METHOD']);
 // Valores de rutas
 /////////////////////////////////////
 
-define('FOLDER_PATH', '/mvc');
+define('FOLDER_PATH', '/mvc');  // Ruta principal de la aplicación
 
 define('ROOT', $_SERVER['DOCUMENT_ROOT']);
 
@@ -30,7 +30,7 @@ define('LIBS_ROUTE', ROOT . FOLDER_PATH . '/system/libs/');
 /////////////////////////////////////
 
 define('CORE', 'system/core/');
-define('DEFAULT_CONTROLLER', 'Home');
+define('DEFAULT_CONTROLLER', 'Main');
 
 //////////////////////////////////////
 // Valores de base de datos
@@ -39,7 +39,7 @@ define('DEFAULT_CONTROLLER', 'Home');
 define('HOST', 'localhost');
 define('USER', 'root');
 define('PASSWORD', '');
-define('DB_NAME', 'curso_mvc');
+define('DB_NAME', 'hwsw_db');
 
 //////////////////////////////////////
 // Valores configuracion
