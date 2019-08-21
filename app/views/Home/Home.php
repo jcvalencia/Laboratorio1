@@ -13,9 +13,9 @@
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron header">
     <div class="container text-center">
-      <h1>Hola, <?= $nombre ?>!</h1>
-      <p>Este es un ejemplo de MVC con Php vanilla hecho desde cero.</p>
-      <p><a class="btn btn-primary btn-lg button" target="_blank" href="https://github.com/Developero-oficial/php-mvc" role="button">Código fuente &raquo;</a></p>
+      <h1>Laboratorio #1: </h1>
+      <p>Manejo de datos en el servidor e interacción con el cliente mediante una aplicación web Preparación del laboratorio</p>
+      <p><a class="btn btn-primary btn-lg button" target="_blank" href="https://github.com/jcvalencia/Laboratorio1" role="button">Código fuente &raquo;</a></p>
     </div>
   </div>
 </body>
