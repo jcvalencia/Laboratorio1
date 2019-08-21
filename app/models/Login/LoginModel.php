@@ -8,9 +8,9 @@ class LoginModel extends Model {
     parent::__construct();
   }//constructor
 
-  public function signIn($email)   {
-    $email = $this->db->real_escape_string($email);
-    $sql = "SELECT email, password FROM usuarios WHERE email = '{$email}'";
+  public function signIn($username)   {
+    $username = $this->db->real_escape_string($username);
+    $sql = "SELECT id, username, email, passwd FROM users WHERE username = '{$username}'";
     return $this->db->query($sql);
   }// signIn
 } // class
