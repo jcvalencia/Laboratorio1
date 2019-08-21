@@ -7,52 +7,46 @@ require_once LIBS_ROUTE .'Session.php';
 /**
 * Login controller
 */
-class LoginController extends Controller
-{
+class LoginController extends Controller {
   private $model;
 
   private $session;
 
-  public function __construct()
-  {
+  public function __construct() {
     $this->model = new LoginModel();
     $this->session = new Session();
-  }
+  }// constructor
 
-  public function exec()
-  {
+  public function exec() {
     $this->render(__CLASS__);
-  }
+  }// exec
 
-  public function signin($request_params)
-  {
+  public function signin($request_params) {
     if($this->verify($request_params))
-      return $this->renderErrorMessage('El email y password son obligatorios');
+      return $this->renderErrorMessage('El nombre de usuario y contraseña son obligatorios');
 
-    $result = $this->model->signIn($request_params['email']);
+    $result = $this->model->signIn($request_params['username']);
 
     if(!$result->num_rows)
-      return $this->renderErrorMessage("El email {$request_params['email']} no fue encontrado");
+      return $this->renderErrorMessage("El nombre de usuario o contraseña son incorrectos");
 
     $result = $result->fetch_object();
 
-    if(!password_verify($request_params['password'], $result->password))
-      return $this->renderErrorMessage('La contraseña es incorrecta');
+    if(!password_verify($request_params['pass'], $result->passwd))
+      return $this->renderErrorMessage('El nombre de usuario o contraseña son incorrectos');
 
     $this->session->init();
-    $this->session->add('email', $result->email);
-    header('location: /php-mvc/main');
-  }
+    $this->session->add('username', $result->email);
+    header('location: ' . FOLDER_PATH . '/main');
+  }// signin
 
-  private function verify($request_params)
-  {
-    return empty($request_params['email']) OR empty($request_params['password']);
-  }
+  private function verify($request_params) {
+    return empty($request_params['username']) OR empty($request_params['pass']);
+  } // verify
 
-  private function renderErrorMessage($message)
-  {
+  private function renderErrorMessage($message)  {
     $params = array('error_message' => $message);
     $this->render(__CLASS__, $params);
-  }
-
-}
+  } // renderErrorMessage
+ 
+} // class

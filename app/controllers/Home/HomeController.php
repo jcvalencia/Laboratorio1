@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') or exit('No se permite acceso directo');
-require_once ROOT . '/php-mvc/app/models/Home/HomeModel.php';
+require_once ROOT . FOLDER_PATH .'/app/models/Home/HomeModel.php';
 /**
  * Home controller
  */

@@ -13,18 +13,18 @@ class MainController extends Controller{
   public function __construct()  {
     $this->session = new Session();
     $this->session->init();
-    if($this->session->getStatus() === 1 || empty($this->session->get('email')))
+    if($this->session->getStatus() === 1 || empty($this->session->get('username')))
       exit('Acceso denegado');
   }//constructor
 
   public function exec()  {
-    $params = array('email' => $this->session->get('email'));
+    $params = array('username' => $this->session->get('username'));
     $this->render(__CLASS__, $params);
   }//exec
 
   public function logout()  {
     $this->session->close();
-    header('location: '.FOLDER_PATH.'/login');
+    header('location: '.FOLDER_PATH.'/login/signup');
   }//logout
 
-}
+}//class
